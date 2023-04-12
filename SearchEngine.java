@@ -22,7 +22,7 @@ class Handler implements URLHandler {
                 if (parameters[0].equals("search")){
                     String result = "";
                     for (String s: strs){
-                        if (s.equals(parameters[1])){
+                        if (s.contains(parameters[1])){
                             result = result + s;
                         }
                     }
